@@ -1,6 +1,12 @@
-import { createGlobalStyle } from "styled-components";
+import styled, {createGlobalStyle, ThemeProvider} from "styled-components";
 import Router from "./Router";
 import {ReactQueryDevtools} from "react-query/devtools";
+import {useRecoilState, useSetRecoilState} from "recoil";
+import {isDarkAtom} from "./atom";
+import { darkTheme, lightTheme } from "./theme";
+import React from "react";
+import { StarIcon, SunIcon, ArrowLeftIcon } from "@chakra-ui/icons";
+import {useNavigate} from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
@@ -67,13 +73,55 @@ a {
 }
 `;
 
+const LightMode = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background-color: ${props => props.theme.accentColor};
+`
+
+const ToggleButton = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${props => props.theme.boxColor};
+`
+
+const Text = styled.h2`
+  font-size : 40px;
+  font-weight: 600;
+  color: ${props => props.theme.bgColor}
+`
+
 function App() {
+    const [ isDark, setIsDark ] = useRecoilState(isDarkAtom);
+    const navigate = useNavigate();
+
+    const handleLightMode = () => {
+        setIsDark((prev) => !prev);
+    }
+
+    const handleNavHome = () => navigate("/");
+
   return (
-    <>
+    <ThemeProvider theme={ isDark ? darkTheme : lightTheme }>
       <GlobalStyle />
+        <LightMode >
+            <Text>Nomad Coins</Text>
+            <ToggleButton onClick={handleLightMode}>{isDark ? <StarIcon /> : <SunIcon /> }</ToggleButton>
+            <ToggleButton onClick={handleNavHome}><ArrowLeftIcon /></ToggleButton>
+        </LightMode>
       <Router />
       <ReactQueryDevtools />
-    </>
+    </ThemeProvider>
   );
 }
 

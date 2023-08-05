@@ -1,6 +1,5 @@
-import {useParams} from "react-router";
 import {useQuery} from "react-query";
-import {fetchCoinHistory} from "../api";
+import { fetchCoinHistory } from "../api";
 import ApexChart from "react-apexcharts"
 
 interface ChartProps {

@@ -1,4 +1,3 @@
-import {response} from "express";
 
 const BASE_URL = `https://api.coinpaprika.com/v1`
 const BASE_URL_FOR_DATA = `https://ohlcv-api.nomadcoders.workers.dev?coinId=`
