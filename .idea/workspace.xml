@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f35c50d8-bbe7-4dd3-b5fa-cecb4d9ecbbc" name="Changes" comment="" />
+    <list default="true" id="f35c50d8-bbe7-4dd3-b5fa-cecb4d9ecbbc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Topbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/atom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateToDo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateToDo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToDo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ToDo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/toDoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/toDoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme.ts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +109,7 @@
       <workItem from="1690797575048" duration="579000" />
       <workItem from="1690798157813" duration="476000" />
       <workItem from="1690986653393" duration="5910000" />
-      <workItem from="1691476161077" duration="648000" />
+      <workItem from="1691476161077" duration="24966000" />
     </task>
     <servers />
   </component>
